@@ -14,5 +14,5 @@ Let's try adding something to this branch. Suppose you want to work on your pers
 echo "<html><head>My Personal WebPage</head><body></body></html>" > index.html
 ```
 
-Now try to push. What happens? Follow the instructions git gives you until you get stuck. Check out the answers branch and run `git pull origin answers` to find out.
+Now try to `commit` and `push`. What happens? Follow the instructions git gives you until you get stuck. Check out the answers branch and run `git pull origin answers` to find out.
 
