@@ -1,2 +1,2 @@
-# git
-Scenario contribution for GIT Workshop
+# git Workshop
+For each command category kindly upload the files/examples.
