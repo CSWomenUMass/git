@@ -1,18 +1,23 @@
-# `checkout ` Command
+What went wrong? Consider the action you just did and compare it with what you tried before:
 
-`checkout` is the command you will use to navigate branches and commits. This exercise assumes you have already completed the exercises for `clone`, `status`, and `branch`.
-
-Start by creating a new branch:
-
+This time:
 ```
-git checkout -b gh-pages
+git checkout answers
+git pull origin answers
 ```
 
-Let's try adding something to this branch. Suppose you want to work on your personal webpage. You can put anything in there, but for now, let's try:
-
+Previously:
 ```
+git checkout gh-pages
 echo "<html><head>My Personal WebPage</head><body></body></html>" > index.html
 ```
 
-Now try to push. What happens? Follow the instructions git gives you until you get stuck. Check out the answers branch and run `git pull origin answers` to find out.
+What's missing?
 
+Any time you are confused about the status of a branch, just type `git status`.
+
+Now let's try doing things better. We're going to checkout another branch, only this time it will be tagged with a commit hash:
+```
+git checkout f3782989f92878e4106f3256f1f7fbe3f51e3da5
+```
+All commits have a "hash" that uniquely identifies them. If you are ever in a situation where you need to be developing from a specific point in time, you can check out from that that hashed commit.
