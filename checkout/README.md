@@ -16,8 +16,17 @@ What's missing?
 
 Any time you are confused about the status of a branch, just type `git status`.
 
-Now let's try doing things better. We're going to checkout another branch, only this time it will be tagged with a commit hash:
+Next, either type some junk you don't want into index.html or delete the file. If you have not committed your changes, you can always recover your file:
 ```
-git checkout f3782989f92878e4106f3256f1f7fbe3f51e3da5
+git checkout -- index.html
 ```
-All commits have a "hash" that uniquely identifies them. If you are ever in a situation where you need to be developing from a specific point in time, you can check out from that that hashed commit.
+
+However, it is best practice (in git!) to commit frequently. This way you can always roll back to a previous commit.
+
+Make some changes as before, but this time commit them. Note: You should still be on the `answers` branch. Now, to roll back, type:
+```
+git checkout answers~1 index.html
+```
+
+All commits have a "hash" that uniquely identifies them. If you are ever in a situation where you need to be developing from a specific point in time, you can also check out from that hashed commit.
+
