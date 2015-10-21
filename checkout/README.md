@@ -14,11 +14,5 @@ Let's try adding something to this branch. Suppose you want to work on your pers
 echo "<html><head>My Personal WebPage</head><body></body></html>" > index.html
 ```
 
-
-
-Start by checking an earlier version of this repository:
-
-```
-git checkout 3efb56d507ce9214d3be56730e61f37b3cb9fc1f
-```
+Now try to push. What happens? Follow the instructions git gives you until you get stuck. Check out the answers branch and run `git pull origin answers` to find out.
 
