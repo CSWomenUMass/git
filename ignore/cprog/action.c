@@ -1,6 +1,10 @@
 #include <stdio.h>
+#include <assert.h>
 
 void action(void) {
-  printf("Hello World!\n");
+  FILE *fp = fopen("output", "w");
+  assert(fp != NULL);
+  fprintf(fp, "Hello World!\n");
+  fclose(fp);
 }
 
